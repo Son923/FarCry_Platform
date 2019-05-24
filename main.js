@@ -8,7 +8,7 @@ function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
     width: 1200,
-    height: 800,
+    height: 700,
     webPreferences: {
       nodeIntegration: true
     },  
@@ -16,7 +16,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  win.loadFile('login.html')
+  win.loadFile('login/login.html')
 
 //   // Open the DevTools.
 //   win.webContents.openDevTools()
