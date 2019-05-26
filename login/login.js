@@ -9,9 +9,8 @@ registerWindowBtn.addEventListener('click', (event) => {
         height: 600,
         webPreferences: {
           nodeIntegration: true
-        },  
+        },
         resizable: false
     });
-    
     registerWindow.loadFile('register/register.html');
 })
