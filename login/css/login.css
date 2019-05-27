@@ -29,3 +29,7 @@ body {
     padding: 5px;
     height: 40px;
   }
+
+  #register-btn {
+    cursor: pointer;
+  }
