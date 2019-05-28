@@ -28,16 +28,16 @@
                       <h3 class="text-center text-info">Login</h3>
                       <div class="form-group">
                           <label for="username" class="text-info">Username:</label><br>
-                          <input type="text" name="username" id="username" class="form-control">
+                          <input type="text" name="username" id="username" class="form-control require" required/>
                       </div>
                       <div class="form-group pass_show">
                           <label for="password" class="text-info">Password:</label><br>
-                          <input type="password" name="password" id="password" class="form-control">
+                          <input type="password" name="password" id="password" class="form-control require" required>
                           <span class="ptxt"><i id="password_eye" class="fas fa-eye"></i></span>
                       </div>
                       <div class="form-group">
                           <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                          <input id="login-submit" type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                          <input id="login-submit" type="submit" name="submit" class="btn btn-info btn-md" value="Submit" disabled="disabled">
                           <a href="../home/home.html" class="btn btn-info">Home</a>
                       </div>
                       <div id="register-link" class="text-right">
@@ -50,7 +50,8 @@
     </div>
     <!------ Login END ---------->
 
-  
+    <!-- Submit Button JS-->
+    <script src="./js/submit_btn.js"></script>
     <!-- Register JS-->
     <script src="./js/register_btn.js"></script>
     <!-- Show password JS-->
