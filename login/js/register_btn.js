@@ -1,4 +1,4 @@
-console.log('login process');
+console.log('login screen');
 
 const BrowserWindow = require('electron').remote.BrowserWindow;
 
@@ -12,5 +12,6 @@ registerWindowBtn.addEventListener('click', (event) => {
         },
         resizable: false
     });
-    registerWindow.loadFile('register/register.html');
+    // Load register.html
+    registerWindow.loadFile('login/register/register.html');
 })

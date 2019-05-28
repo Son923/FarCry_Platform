@@ -1,5 +1,3 @@
-console.log('password js');
-
 let eye = document.getElementById('password_eye');
 eye.addEventListener('click', () => {
     var pass_input = document.getElementById("password");
