@@ -13,5 +13,5 @@ registerWindowBtn.addEventListener('click', (event) => {
         resizable: false
     });
     // Load register.html
-    registerWindow.loadFile('login/register/register.html');
+    registerWindow.loadFile('Login/Register/register.html');
 })
