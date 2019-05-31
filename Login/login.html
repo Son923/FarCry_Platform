@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FarCry Launcher</title>
+
+    <!------ Bootstrap CSS ---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!------ Login CSS---------->
+    <link href="./css/login.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Password CSS---------->
+    <link href="./css/password.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Font Awesome CSS---------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+
+  <body id="login" style="background-image: url('../asset/farcry.jpg'); background-size: cover">
+    <img id="intek-logo" src="../asset/intek_logo.png" alt="">
+
+    <!------ Login START ---------->
+    <div class="container">
+        <div id="login-row" class="row justify-content-end">
+            <div id="login-column" class="col-md-6 justify-content-center">
+                <img src="../asset/far-cry-wide.png" alt="" style="width: 100%; height:auto; margin-left: 70px; margin-top: 50px"> 
+
+                <div id="login-box" class="col-md-12">
+                  <form id="login-form" class="form" action="" method="post">
+                      <h3 class="text-center text-info">Login</h3>
+                      <div class="form-group">
+                          <label for="username" class="text-info">Username:</label><br>
+                          <input type="text" name="username" id="username" class="form-control require" required/>
+                      </div>
+                      <div class="form-group pass_show">
+                          <label for="password" class="text-info">Password:</label><br>
+                          <input type="password" name="password" id="password" class="form-control require" required>
+                          <span class="ptxt"><i id="password_eye" class="fas fa-eye"></i></span>
+                      </div>
+                      <div class="form-group">
+                          <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                          <input id="login-submit" type="submit" name="submit" class="btn btn-info btn-md" value="Submit" disabled="disabled">
+                          <a href="../Home/home.html" class="btn btn-info">Home</a>
+                      </div>
+                      <div id="register-link" class="text-right">
+                          <a id="register-btn" class="text-info">Register here</a>
+                      </div>
+                  </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!------ Login END ---------->
+
+    <!-- Submit Button JS-->
+    <script src="./js/submit_btn.js"></script>
+    <!-- Register JS-->
+    <script src="./js/register_btn.js"></script>
+    <!-- Show password JS-->
+    <script src="./js/password.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
