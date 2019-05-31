@@ -1,4 +1,5 @@
 var getAPIBtn = document.getElementById('getUser');
+var loginForm = document.getElementById('addPost');
 
 getAPIBtn.addEventListener('click', () => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -18,3 +19,21 @@ getAPIBtn.addEventListener('click', () => {
     })
 })
 
+loginForm.addEventListener('submit', addUser);
+
+function addUser(e) {
+    e.preventDefault();
+
+    let title = document.getElementById('title');
+    let body = document.getElementById('body');
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({title:title.value, body:body.value})
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+}
