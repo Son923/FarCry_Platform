@@ -33,7 +33,17 @@ function addUser(e) {
             "Content-type": "application/json; charset=UTF-8"
         },
         body: JSON.stringify({title:title.value, body:body.value})
+    })  
+    .then(res => {
+        if (res.status === 201) {
+            console.log('oke babi token')
+        } else {
+            console.log('oh no fuck you')
+        }
     })
     .then(res => res.json())
     .then(data => console.log(data))
+
+
+    // .then(data => console.log(data))
 }
