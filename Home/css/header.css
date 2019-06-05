@@ -213,6 +213,23 @@ nav ul li.selected ul li a{
 }
 
 
+#inner-setting.selected {
+	display: block  	
+}
+
+#inner-setting.notselected {
+	display: none
+}
+
+#game-path-head{
+	display: block;
+	height: 50px;
+	font-size: 20px;
+	text-align: left;
+	padding: 10px;
+}
+
+
 
 
 

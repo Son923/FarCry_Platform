@@ -25,23 +25,19 @@
 				<nav>
 					<ul>
 						<li><a href="#">START GAME</a>
+						
 						</li>
 						<li><a href="#">SETTING</a>
 							<ul>
 								<li><a href="#">CHARACTER</a></li>
-								<li><a href="#">CONTROLS</a></li>
 								<li><a href="#" id="game-path">GAME PATH</a></li>
+							</ul>
+							<ul id="inner-setting" class="notselected">
+								<p id="#game-path-head">GAME PATH INNER</p>
+								<li><a><input type="text" name="gamepath_input" id="path"></a></li>
 							</ul>
 						</li>
 						<li><a href="#">MATCH HISTORY</a></li>
-						<li><a href="#">LAN</a>
-							<ul>
-								<li><a href="#">STUFF</a></li>
-								<li><a href="#">STUFF sss</a></li>
-								<li><a href="#">STUFF</a></li>
-							</ul>
-						</li>
-
 						<li><a href="../Login/login.html">LOG OUT</a></li>
 					</ul>
 				</nav>
@@ -61,9 +57,9 @@
 		</header>
 		
 		<!-- Header JS -->
-
-		<script src='./home.js'></script>
-		
+		<script src='./js/header.js'></script>
+		<!-- Game Path JS -->
+		<script src='./js/game_path.js'></script>
 	</body>
 
 </html>
