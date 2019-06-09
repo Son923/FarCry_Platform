@@ -1,8 +1,8 @@
 import requests
 import datetime
 
-params = {'username': 'nhatlq',
-        'password': '!@#!@#$@#$'}
+params = {'username': 'lenhat',
+        'password': 'masternhat'}
 
 headers = {'content-type': 'application/json'}
 

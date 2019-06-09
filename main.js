@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const {ipcMain} = require('electron');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -29,6 +30,12 @@ function createWindow () {
     win = null
   })
 }
+
+ipcMain.on('log-in-successful', () => {
+  console.log('oke haha');
+})
+
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

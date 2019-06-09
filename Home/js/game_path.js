@@ -1,15 +1,17 @@
-var remote = require('remote');
-const { dialog } = require('electron').remote;
+const BrowserWindow = require('electron').remote.BrowserWindow;
 
+const gamePathBtn = document.getElementById('game-path');
 
-
-console.log(dialog.showOpenDialog({ properties: ['openFile', 'openDirectory', 'multiSelections'] }))
-
-document.addEventListener('DOMContentLoaded', () => {
-    let gamePathBtn = document.getElementById('game-path');
-    gamePathBtn.addEventListener('click', () => {
-        console.log('clicked');
-        dialog.showOpenDialog({ properties: ['openFile', 'openDirectory', 'multiSelections   '] })
-        
-    })
+gamePathBtn.addEventListener('click', (event) => {
+    let registerWindow = new BrowserWindow({
+        width: 500,
+        height: 500,
+        webPreferences: {
+          nodeIntegration: true
+        },
+        resizable: false
+    });
+    // Load register.html
+    registerWindow.loadFile(`${__dirname}/cac.html`);
 })
+
